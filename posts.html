@@ -1,0 +1,27 @@
+---
+layout: page
+title: Post Archive
+date: 2016-11-14 18:42:11.000000000 -04:00
+type: page
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '22112502'
+  _wp_page_template: default
+  _oembed_2a908cb6334b971061ea731ebaeb2da2: "{{unknown}}"
+  _oembed_926bf6a8bba5291e37ea0fdf88e02ca9: "{{unknown}}"
+author:
+  login: annotum
+  email: annotum@solvitor.com
+  display_name: annotum
+  first_name: ''
+  last_name: ''
+---
+<h2><span class="Apple-style-span" style="font-size:15px;">Annotum Post Archive</span></h2>
+<ul>
+{% for post in site.posts %}	
+    <li><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;•&nbsp; <small><em>{{ post.date | date: "%B %e, %Y" }}</em> {{ post.category }}</small></li>
+{% endfor %}	
+</ul>
