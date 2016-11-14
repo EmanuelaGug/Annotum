@@ -1,0 +1,106 @@
+---
+layout: post
+title: 'Annotum Feature / Enhancement Roadmap: What''s next?'
+date: 2012-01-14 17:28:02.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- Releases
+tags: []
+meta:
+  _edit_last: '22112502'
+  _anno_author_order: a:1:{i:0;s:8:"22112502";}
+  _anno_author_22112502: '22112502'
+  publicize_results: a:1:{s:7:"twitter";a:1:{i:240377563;a:2:{s:7:"user_id";s:7:"annotum";s:7:"post_id";s:18:"158239421639036930";}}}
+  _wpas_done_twitter: '1'
+  _oembed_96de61159614f73b165cd684cc57abed: "{{unknown}}"
+  _oembed_1c21de1f92649bed6d55cd108b1a48fe: "{{unknown}}"
+  _oembed_ba93455a11f403f689d540743a6bc8dd: "{{unknown}}"
+  _oembed_456b6b6dd87ef0a268851e8649e90f04: "{{unknown}}"
+  _oembed_8e66ed4719c19c5a5093bd6ad3a9d369: "{{unknown}}"
+  _oembed_8b7144c913c7fbc2e85726f1c5f6e94b: "{{unknown}}"
+  _oembed_9ec45beed26feef3fd8eb01ea6ae026c: "{{unknown}}"
+  _oembed_a8289f5ea5a4e0d21b4bb9093879724d: "{{unknown}}"
+  _oembed_abdea4ccc6c5fb8dab0a292b7d494caf: "{{unknown}}"
+  _oembed_5a38983c7e56020bea8d84245d13166e: "{{unknown}}"
+  _oembed_35e63d7427bd72806a50e30bf4684071: "{{unknown}}"
+  _oembed_60e3a5b46df79358e60d93bdca171622: "{{unknown}}"
+  _oembed_33848c4c0d7a4c95afdf6b71f3db053f: "{{unknown}}"
+author:
+  login: annotum
+  email: annotum@solvitor.com
+  display_name: annotum
+  first_name: ''
+  last_name: ''
+---
+<p id="annotum-enhancement-roadmap">Here's a list of possible Annotum enhancements and fixes.  What's important to you? Let us know by suggesting features at the <a href="http://annotum.uservoice.com/forums/141029">Annotum Feedback Forum</a>.</p>
+<h2 id="basic-enhancements">Basic Enhancements</h2>
+<h3 id="author-facing">Bug Fixes</h3>
+<ul>
+<li>Fix all issues on the Annotum  <a href="https://github.com/Annotum/Annotum/issues?sort=updated&amp;direction=desc&amp;state=open">open issues list</a>.</li>
+</ul>
+<h3 id="author-facing">Author Facing</h3>
+<ul>
+<li>Enhancements to WYSIWYG/WYSIWYAATD editing (even more elegant)
+<ul>
+<li>edit images, edit equations, etc.</li>
+<li>add references to items (fig, table) within current article</li>
+<li>Some way to delete an entire wrapper. For example, an easy way to select an entire figure, or an entire table wrapper</li>
+<li>Ability to insert 'parts' into wrappers. Example: oops, we deleted a caption in the figure, but want to add it back in. No other way to do this currently outside of inserting a new figure.</li>
+<li>Better handling of 'broken' tag structure (i.e., don't permit removal of required tags, better cleanup for invalid DTD markup)</li>
+<li>Allow nested subsections with appropriate heading levels</li>
+<li>More support for paste from Word, other rich formats</li>
+<li>Refactor / re-evaluate the tinyMCE experience.</li>
+</ul>
+</li>
+<li>References and Media
+<ul>
+<li>Reference management including import/export API (Zotero, Endnote, etc.) and sharing across articles.</li>
+<li>Media "archive": easier to mange (tag) assets uploaded to a journal to be reused across articles</li>
+<li>Richer media handling e.g. video</li>
+</ul>
+</li>
+<li>Template system (pre-defined article sections)</li>
+<li>Profile integration (Author profile and WordPress profile); links to existing author databases</li>
+<li>General UI simplification. Hide more of WordPress interface [c.f. Adminimize plugin]</li>
+</ul>
+<h3 id="review-process-workflow">Review Process / Workflow</h3>
+<ul>
+<li>Inline document annotation/markup (comments at a specific point in the text)richer collaboration model</li>
+<li>allowance for designation of reviewer groups or other ways to select large numbers of reviewers</li>
+<li>Configurable workflow (additional states?)</li>
+</ul>
+<h3 id="back-end">Back End</h3>
+<ul>
+<li>Hosting: wider support for various hosting environments; preconfigured one-click installers for popular hosts (GoDaddy, DreamHost, Media Temple, PHPFog)</li>
+<li>WordPress back-end improvements (eg: remove 'Trash' button if cannot actually trash an article)</li>
+<li>Custom article list management screen</li>
+<li>Rethink/redo "Author Snapshots", there should be some way to edit this directly, currently its wiped out every time a published article is manually saved.</li>
+<li>Email notification enhancements
+<ul>
+<li>Configurable Templates</li>
+<li>Individual Opt-in/out</li>
+</ul>
+</li>
+<li>Code Cleanup / Refactoring
+<ul>
+<li>Refactor portions of the JS for consistency, and there are portions which could use a little DRY methodology</li>
+<li>Refactor the save process a bit.</li>
+<li>For internal/review comments Extend the listtableclass</li>
+<li>Adjust the portions borrowed from WP Core, and importer to our coding standard</li>
+<li>Remove unused portions (mostly in the importer) from the code - left in for WP.com code review comparing</li>
+</ul>
+</li>
+<li>Add relevant hooks in various spots, so this could be extended by more plugins and contributors.</li>
+</ul>
+<h3 id="output">Output</h3>
+<ul>
+<li>Complete support for NLM Journal Article DTD (not just a subset).</li>
+<li>Additional themes/designs</li>
+<li>Tablet/smartphone template</li>
+<li>Improved PDF output</li>
+<li>eBook (ePub or AZW) output</li>
+</ul>
+<blockquote><p>Annotum is a product of Solvitor LLC with heavy lifting by Crowd Favorite</p></blockquote>
+<blockquote><p>Annotum is free (speech and beer)</p></blockquote>

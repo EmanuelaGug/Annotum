@@ -1,0 +1,78 @@
+---
+layout: post
+title: Annotum 2.0 - RC1
+date: 2014-08-29 18:39:15.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Releases
+tags: []
+meta:
+  _wpas_skip_facebook: '1'
+  _wpas_skip_google_plus: '1'
+  _wpas_skip_linkedin: '1'
+  _wpas_skip_tumblr: '1'
+  _wpas_skip_path: '1'
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  publicize_twitter_user: annotum
+  publicize_twitter_url: http://t.co/oP6ut9m6tm
+  _wpas_done_731916: '1'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:240377563;b:1;}}
+  _anno_author_order: a:1:{i:0;s:8:"22112502";}
+  _anno_author_22112502: '22112502'
+author:
+  login: annotum
+  email: annotum@solvitor.com
+  display_name: annotum
+  first_name: ''
+  last_name: ''
+---
+<p>We're pleased to announce the <a href="https://github.com/Annotum/Annotum/releases/tag/v2.0-rc-1">initial release candidate for Annotum 2.0</a>. Barring any major issues, v2.0 will be <a href="http://wordpress.org/themes/annotum-base">released on WordPress.org</a> in the coming days.</p>
+<h2>Key Features of v2.0</h2>
+<ul class="task-list">
+<li>
+<p>Entirely revamped editor with full XML validation and schema enforcement for "bulletproof" JATS-compliant XML </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094461/691d8342-2fa8-11e4-89fb-21478998b7f4.png" target="_blank"><img src="{{ site.baseurl }}/assets/691d8342-2fa8-11e4-89fb-21478998b7f4.png" alt="image" /></a></p>
+</li>
+<li>
+<p>Support for multiple-level sections and subsections </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094453/4ff11334-2fa8-11e4-821e-374d5fda63ad.png" target="_blank"><img src="{{ site.baseurl }}/assets/4ff11334-2fa8-11e4-821e-374d5fda63ad.png" alt="image" /></a></p>
+</li>
+<li>
+<p>Support for rich text formatting in article abstract </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094400/cabe5f14-2fa7-11e4-830a-9e6b25f16bdf.png" target="_blank"><img src="{{ site.baseurl }}/assets/cabe5f14-2fa7-11e4-830a-9e6b25f16bdf.png" alt="image" /></a></p>
+</li>
+<li>
+<p>Article templates (standard headings for new articles) </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094339/33edf324-2fa7-11e4-8687-2dd81affd141.png" target="_blank"><img src="{{ site.baseurl }}/assets/33edf324-2fa7-11e4-8687-2dd81affd141.png" alt="image" /></a></p>
+</li>
+<li>
+<p>Article tree viewer to navigate article structure <br /><a href="https://cloud.githubusercontent.com/assets/294757/4094425/071de5c4-2fa8-11e4-9a46-062ceae9c5b7.png" target="_blank"><img src="{{ site.baseurl }}/assets/071de5c4-2fa8-11e4-9a46-062ceae9c5b7.png" alt="image" /></a></p>
+</li>
+<li>
+<p>Syntax-aware XML code editor for power users <br /><a href="https://cloud.githubusercontent.com/assets/294757/4094313/cf8ceeee-2fa6-11e4-82cb-baacd500fee7.png" target="_blank"><img src="{{ site.baseurl }}/assets/cf8ceeee-2fa6-11e4-82cb-baacd500fee7.png" alt="image" /></a></p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094471/8da85e80-2fa8-11e4-8cf5-6845134534de.png" target="_blank"><img src="{{ site.baseurl }}/assets/8da85e80-2fa8-11e4-8cf5-6845134534de.png" alt="image" /></a></p>
+</li>
+<li>
+<p>Now uses WordPress standard dialog for figures (images) </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094477/ae533ed4-2fa8-11e4-92f8-96dff51f7dd5.png" target="_blank"><img src="{{ site.baseurl }}/assets/ae533ed4-2fa8-11e4-92f8-96dff51f7dd5.png" alt="image" /></a></p>
+</li>
+<li>
+<p>Better support for WordPress revisions and version compare </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094501/eb4b8dbe-2fa8-11e4-8d62-85b162f24ec3.png" target="_blank"><img src="{{ site.baseurl }}/assets/eb4b8dbe-2fa8-11e4-8d62-85b162f24ec3.png" alt="image" /></a></p>
+</li>
+</ul>
+<h2>Known Issues</h2>
+<ul class="task-list">
+<li>
+<p>In PDF output, images that cross a page boundary may be cut off. This can be avoided by forcing a new page prior to every image by making the following change to the<code>assets/main/css/pdf.css</code> file: </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094616/1f2784de-2faa-11e4-8189-2524c3c2b365.png" target="_blank"><img src="{{ site.baseurl }}/assets/1f2784de-2faa-11e4-8189-2524c3c2b365.png" alt="image" /></a></p>
+</li>
+<li>
+<p>PDF output support for non-latin character sets may be limited. As a workaround, replace the PDF fonts in <code>plugins/anno-pdf-download/lib/dompdf/lib/fonts</code> with fonts containing the desired character set. You will also need to update <code>assets/main/css/pdf.css</code> (see line 212). </p>
+<p><a href="https://cloud.githubusercontent.com/assets/294757/4094664/a21957f0-2faa-11e4-859f-522805d1881d.png" target="_blank"><img src="{{ site.baseurl }}/assets/a21957f0-2faa-11e4-859f-522805d1881d.png" alt="image" /></a></p>
+</li>
+</ul>
+<p>As always, contact us via the <a title="Support" href="http://annotum.org/support/">Support page</a> should you have any questions, comments, or suggestions.</p>

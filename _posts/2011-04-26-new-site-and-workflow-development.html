@@ -1,0 +1,35 @@
+---
+layout: post
+title: New Site Today - Workflow development in progress
+date: 2011-04-26 20:08:32.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Site Updates
+tags:
+- project
+- site
+meta:
+  _edit_last: '22112502'
+  _wpas_done_twitter: '1'
+  _oembed_0eab87f247cf3fd57c080e3c363c19dd: "{{unknown}}"
+  _oembed_343d1fe4411731c718e6aac8de2b6619: "{{unknown}}"
+author:
+  login: annotum
+  email: annotum@solvitor.com
+  display_name: annotum
+  first_name: ''
+  last_name: ''
+---
+<p>Welcome to the new Annotum site!  Feel free to explore the information here, and don't forget to follow us on Twitter (<a href="http://twitter.com/annotum">@annotum</a>) or subscribe to site updates using the button on the right.  I'll soon be deprecating the old info.annotum.org for anyone who was using it (yes, both of you).</p>
+<p>We're just starting development this week, working through the intricacies of workflow and permissions.  The workflow model is fairly simple, with just a few actions (and the resulting state in parentheses)</p>
+<ol>
+<li>Create  (state: draft)</li>
+<li>Submit (state: in review)</li>
+<li>Accept/revise/reject (state: accepted | draft | rejected)</li>
+<li>Publish</li>
+</ol>
+<p>However, once you add the other actions, from adding reviewers and coauthors to comments and ratings, the picture looks a little more like this:</p>
+<p>[caption id="attachment_69" align="aligncenter" width="700" caption="Figure 1: Annotum Editorial Workflow"]<a href="http://annotum.files.wordpress.com/2011/04/annotum-editorialworkflow.png"><img class="size-full wp-image-69" title="Annotum-EditorialWorkflow" src="{{ site.baseurl }}/assets/annotum-editorialworkflow.png" alt="" width="700" height="880" /></a>[/caption]</p>
+<p>Coming up next week: setting up the staging server and populating the code repository with our initial commit.  Stay tuned!</p>
