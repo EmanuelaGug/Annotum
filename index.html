@@ -14,12 +14,11 @@ author:
   first_name: ''
   last_name: ''
 ---
-		<h2>Latest Updates</h2>
-<ul>	<li><a href="https://annotum.org/2016/11/22/annotum-final-release/">Annotum Final Release</a></li>
-	<li><a href="https://annotum.org/2014/08/31/annotum-v2-0-is-live/">Annotum v2.0 is&nbsp;live!</a></li>
-	<li><a href="https://annotum.org/2014/08/29/annotum-2-0-rc1/">Annotum 2.0 –&nbsp;RC1</a></li>
-	<li><a href="https://annotum.org/2014/07/25/annotum-2-0-alpha2-pre-release-use-carefully/">Annotum 2.0 alpha2 (pre release – use&nbsp;carefully)</a></li>
-	<li><a href="https://annotum.org/2014/06/17/annotum-2-0-alpha-available-pre-release-use-at-own-risk/">Annotum 2.0 alpha available (pre-release – use at own&nbsp;risk!)</a></li>
+		<h2><span class="Apple-style-span" style="font-size:15px;">Annotum Post Archive</span></h2>
+<ul>
+{% for post in site.posts %}	
+    <li><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;•&nbsp; <small><em>{{ post.date | date: "%B %e, %Y" }}</em> {{ post.category }}</small></li>
+{% endfor %}	
 </ul>
 
 <h2>Welcome</h2>
