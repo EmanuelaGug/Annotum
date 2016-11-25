@@ -1,0 +1,38 @@
+---
+layout: post
+title: Annotum Final Release
+date: 2016-11-22 12:08:32.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Site Updates
+tags:
+- project
+- site
+
+author:
+  login: annotum
+  email: annotum@solvitor.com
+  display_name: annotum
+  first_name: ''
+  last_name: ''
+---
+<div class="content entry-content">
+			<p>I’m a little sad to write that today we are releasing the final update to Annotum, <a href="https://github.com/Annotum/Annotum/releases/tag/v2.1.1.1">v2.1.1.1</a>, five years to the day since the first production release of Annotum on November 22, 2011.</p>
+<p>For all of you that downloaded Annotum (260k+!), or used it as a home on WordPress.com for your <a href="http://knol.google.com">Google Knol</a> content, I’d like to express my thanks for your enthusiasm, patience, and most of all for your willingness to provide open access content to the world.</p>
+<p>I’d also like to thank the strong supporters of Annotum, including Automattic, Google, NCBI, <a href="https://crowdfavorite.com/">Crowd Favorite</a>, and <a href="https://solvitor.com/">Solvitor</a>. And I’d like to send a special Thank You to the late <a href="http://alexking.org/">Alex King</a>, who believed in and supported this project from the very beginning.</p>
+<p>As to the why,&nbsp;those of you who maintain Annotum sites have known for some time that it has become difficult to keep all of Annotum’s rich editor functionality working properly as WordPress has continued its relentless forward progress. &nbsp;Therefore we will no longer be providing any new features or updates, including compatibility updates and bug fixes, for Annotum.</p>
+<p>So, what now? As far as the Annotum source code goes, the <a href="https://github.com/Annotum/Annotum">Annotum repository on Github</a> will continue to remain available to anyone. &nbsp;The annotum.org blog (this site) will soon be moved (including all pages and posts) to a github-hosted site within the Annotum repository (but still under the annotum.org URL).</p>
+<p>Please continue to use the <a href="http://annotum.uservoice.com">Annotum Support site</a>&nbsp;(for as long as Uservoice supports free sites, anyway). &nbsp;If you find that you can’t reach me that way, please feel to reach out via Twitter to <a href="https://twitter.com/annotum">@annotum</a> or <a href="https://twitter.com/solvitor">@solvitor</a>.</p>
+<p>For those with existing Annotum sites, you have a few options:</p>
+<ol>
+<li>Keep your site running on WordPress v4.4.5. &nbsp;I don’t really recommend doing this for too long; it’s generally not a good practice to keep using older WordPress versions.</li>
+<li>Export your content via JATS-XML. &nbsp;If you started using Annotum for its JATS support, this is probably the most robust way to maintain your existing content. You&nbsp;will want to double check all images after export — particularly equations which currently rely on the Google chart APIs for rendering.</li>
+<li>Export your articles to WordPress posts using the “convert to post” button in the article editor. &nbsp;This is the simplest if you don’t have any need for JATS or XML. If you go this route, you will definitely want to update to&nbsp;the <a href="https://github.com/Annotum/Annotum/releases/tag/v2.1.1.1">latest version of Annotum</a>; as a rough and ready workaround for those already using version 2.1.1, you can try replacing just the <a href="https://github.com/Annotum/Annotum/blob/master/annotum-base/functions/article-post-type.php">article-post-type.php</a> file. As always, <em><strong>MAKE A COMPLETE BACKUP</strong></em> of all of your code and data <em><strong>BEFORE</strong> </em>trying this on your production site.
+<p>Unfortunately, for converting articles to posts, there’s no batch export — you’ll need to do this one article at a time.</p></li>
+</ol>
+<p>Whatever you choose, please do feel free to reach out via the&nbsp;<a href="https://annotum.org/support/">Support site</a> or on <a href="https://twitter.com/annotum">Twitter</a>. &nbsp;I’m happy to provide support for your migration on an as-available basis, but if your migration needs are extensive, there are additional paid support / development options as well. &nbsp;For that, please feel free to reach out using one of the methods mentioned above.</p>
+<p>Thank you all again and happy WordPressing!</p>
+
+<p>Annotum is free (speech and beer).</p>
